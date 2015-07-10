@@ -1,12 +1,48 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+﻿<!doctype html>
+<html class="no-js">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link href="styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles/starter-template.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
-    <h3>Welcome. </h3>
-    <h2>This is github testing page.</h2>
+<body ng-app="yeomanApp">
+
+    <div class="container">
+        <div class="header" ng-include="'views/menu.html'"
+             ng-controller="MenuCtrl">
+
+        </div>
+        <div ng-view=""></div>
+        <div class="footer">
+             
+        </div>
+    </div>
+
+
+    <script src="scripts/externals/angular.js"></script>
+
+    <script src="scripts/externals/jquery.js"></script>
+    <script src="scripts/externals/bootstrap.min.js"></script>
+    <script src="scripts/externals/angular-route.js"></script>
+
+
+    <script src="scripts/app.js"></script>
+
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/carrier.js"></script>
+    <script src="scripts/controllers/contact-us.js"></script>
+    <script src="scripts/controllers/login.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/menu.js"></script>
+    <script src="scripts/controllers/party-workers.js"></script>
+    <script src="scripts/controllers/people-issues.js"></script>
+    <script src="scripts/controllers/services.js"></script>
+
+    <script src="scripts/services/services.js"></script>
 </body>
 </html>
