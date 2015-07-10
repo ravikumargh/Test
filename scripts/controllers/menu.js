@@ -15,6 +15,12 @@ angular.module('yeomanApp')
           $location.path('/');
       }
 
+      $scope.menuClick = function () {
+          if ($('.navbar-toggle').css('display')=='block') {
+            $('.navbar-toggle').click();
+          }
+      }
+
       //$(function () {
       //    $('.nav a').on('click touchstart', function () {
       //        if ($('.navbar-toggle').css('display') != 'none') {
