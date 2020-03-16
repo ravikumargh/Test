@@ -212,7 +212,7 @@ const AppRoutes = [
         children: [
             {
                 path: '',
-                redirectTo: '/dashboards/dashboard1',
+                redirectTo: '/authentication/login',
                 pathMatch: 'full'
             },
             {

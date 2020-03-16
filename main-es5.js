@@ -341,7 +341,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       component: _layouts_full_full_component__WEBPACK_IMPORTED_MODULE_0__["FullComponent"],
       children: [{
         path: '',
-        redirectTo: '/dashboards/dashboard1',
+        redirectTo: '/authentication/login',
         pathMatch: 'full'
       }, {
         path: 'dashboards',
